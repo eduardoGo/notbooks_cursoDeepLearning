@@ -24,13 +24,15 @@ O dataset das flores Iris ou Iris de Fisher é um dataset mutivariável introduz
 
 A melhor forma de inspecionarmos os dados é visualizando-os. Para fazer isso, utilizaremos a biblioteca seaborn para gerar um gráfico de dispersão — Scatter plot, em inglês. Isso nos permitirá verificar se os dados de medição das pétalas e sépalas estão bem distribuídos.
 
-    import seaborn as sns
-    import matplotlib.pyplot as plt
-    sns.set(style="ticks")
+```python
+import seaborn as sns
+import matplotlib.pyplot as plt
+sns.set(style="ticks")
 
 
-    df = sns.load_dataset("iris")
+df = sns.load_dataset("iris")
 
-    sns.pairplot(df, hue="species")
+sns.pairplot(df, hue="species")
 
-    plt.show()
+plt.show()
+```
